@@ -1,0 +1,512 @@
+var a =10;
+undefined
+typeof a;
+"number"
+a=10.20;
+10.2
+typeof a;
+"number"
+a= "Amit";
+"Amit"
+typeof a;
+"string"
+a='A';
+"A"
+typeof a;
+"string"
+a=true;
+true
+typeof a;
+"boolean"
+var ram = {id:1001,name:'Ram',salary:9999};
+undefined
+document;
+#document
+module;
+VM1251:1 Uncaught ReferenceError: module is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1251:1
+typeof ram;
+"object"
+ram instanceof Object;
+true
+typeof Object;
+"function"
+console.dir(Object);
+VM2274:1 ƒ Object()arguments: (...)assign: ƒ assign()caller: (...)create: ƒ create()defineProperties: ƒ defineProperties()defineProperty: ƒ defineProperty()entries: ƒ entries()freeze: ƒ freeze()getOwnPropertyDescriptor: ƒ getOwnPropertyDescriptor()getOwnPropertyDescriptors: ƒ getOwnPropertyDescriptors()getOwnPropertyNames: ƒ getOwnPropertyNames()getOwnPropertySymbols: ƒ getOwnPropertySymbols()getPrototypeOf: ƒ getPrototypeOf()is: ƒ is()isExtensible: ƒ isExtensible()isFrozen: ƒ isFrozen()isSealed: ƒ isSealed()keys: ƒ keys()length: 1name: "Object"preventExtensions: ƒ preventExtensions()prototype: {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}seal: ƒ seal()setPrototypeOf: ƒ setPrototypeOf()values: ƒ values()__proto__: ƒ ()[[Scopes]]: Scopes[0]
+undefined
+ram.id;
+1001
+ram.name;
+"Ram"
+var w= [10,20,30,40,50];
+undefined
+typeof w;
+"object"
+w instanceof Array;
+true
+typeof Array;
+"function"
+w instanceof Object;
+true
+console.dir(Array);
+VM2684:1 ƒ Array()arguments: (...)caller: (...)from: ƒ from()isArray: ƒ isArray()length: 1name: "Array"of: ƒ of()prototype: Array(0)concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}__proto__: ObjectSymbol(Symbol.species): (...)get Symbol(Symbol.species): ƒ [Symbol.species]()__proto__: ƒ ()[[Scopes]]: Scopes[0]
+undefined
+class A{
+
+}
+undefined
+typeof A;
+"function"
+var tt ;
+undefined
+typeof tt;
+"undefined"
+ram;
+{id: 1001, name: "Ram", salary: 9999}
+ram = null;
+null
+typeof ram;
+"object"
+var ff ;
+undefined
+typeof ff;
+"undefined"
+var ee = null;
+undefined
+typeof ee;
+"object"
+var g = 100;
+undefined
+var e1 = g/0;
+undefined
+typeof e1;
+"number"
+e1;
+Infinity
+var a=100;
+undefined
+var b ="100";
+undefined
+a + b;
+"100100"
+a + parseInt(b);
+200
+a - b;
+0
+a * b;
+10000
+a /b;
+1
+"amit" - "srivastava";
+NaN
+var f = "amit" - "srivastava";
+undefined
+typeof f;
+"number"
+isNaN(f);
+true
+isFinite(100/0);
+false
+Number("100");
+100
+Number("100.20");
+100.2
+var ff = new Number("100.20");
+undefined
+typeof ff;
+"object"
+var ff1 = Number("100.20");
+undefined
+typeof ff1;
+"number"
+ff1;
+100.2
+ff;
+Number {100.2}
+typeof ff;
+"object"
+ff instanceof Number;
+true
+function test(){
+console.log("I am a Test Function ");
+}
+undefined
+typeof test;
+"function"
+test();
+VM4176:2 I am a Test Function 
+undefined
+var g = test;
+undefined
+typeof g;
+"function"
+g;
+ƒ test(){
+console.log("I am a Test Function ");
+}
+g();
+VM4176:2 I am a Test Function 
+undefined
+test();
+VM4176:2 I am a Test Function 
+undefined
+test(10);
+VM4176:2 I am a Test Function 
+undefined
+test(10,[90,100]);
+VM4176:2 I am a Test Function 
+undefined
+test(10,[90,100],"Hello",true);
+VM4176:2 I am a Test Function 
+undefined
+function evenOdd(num){
+return num%2==0?"Even Number "+num:" Odd Number "+num;
+}
+undefined
+function cube(num){
+return num**3;
+}
+undefined
+function loop(fn){
+for(let i = 1; i<=10;i++){
+console.log(fn(i));
+}
+}
+undefined
+loop(evenOdd);
+VM5145:3  Odd Number 1
+VM5145:3 Even Number 2
+VM5145:3  Odd Number 3
+VM5145:3 Even Number 4
+VM5145:3  Odd Number 5
+VM5145:3 Even Number 6
+VM5145:3  Odd Number 7
+VM5145:3 Even Number 8
+VM5145:3  Odd Number 9
+VM5145:3 Even Number 10
+undefined
+loop(cube);
+VM5145:3 1
+VM5145:3 8
+VM5145:3 27
+VM5145:3 64
+VM5145:3 125
+VM5145:3 216
+VM5145:3 343
+VM5145:3 512
+VM5145:3 729
+VM5145:3 1000
+undefined
+function loop(fn){
+for(let i = 1; i<=10;i++){
+if(typeof fn==="function"){
+console.log(fn(i));
+}
+}
+}
+undefined
+loop("amit");
+undefined
+loop(cube);
+VM5456:4 1
+VM5456:4 8
+VM5456:4 27
+VM5456:4 64
+VM5456:4 125
+VM5456:4 216
+VM5456:4 343
+VM5456:4 512
+VM5456:4 729
+VM5456:4 1000
+undefined
+loop((i)=>i);
+VM5456:4 1
+VM5456:4 2
+VM5456:4 3
+VM5456:4 4
+VM5456:4 5
+VM5456:4 6
+VM5456:4 7
+VM5456:4 8
+VM5456:4 9
+VM5456:4 10
+undefined
+var g1;
+undefined
+typeof g1;
+"undefined"
+if(g1){
+console.log("Truthy");
+}
+else{
+console.log("Falsy");
+}
+VM6403:5 Falsy
+undefined
+g1 = null;
+null
+if(g1){
+console.log("Truthy");
+}
+else{
+console.log("Falsy");
+}
+VM6428:5 Falsy
+undefined
+g=10/"amit";
+NaN
+if(g1){
+console.log("Truthy");
+}
+else{
+console.log("Falsy");
+}
+VM6451:5 Falsy
+undefined
+g1=10/"amit";
+NaN
+if(g1){
+console.log("Truthy");
+}
+else{
+console.log("Falsy");
+}
+VM6470:5 Falsy
+undefined
+g1=0;
+0
+if(g1){
+console.log("Truthy");
+}
+else{
+console.log("Falsy");
+}
+VM6484:5 Falsy
+undefined
+g1=100;
+100
+if(g1){
+console.log("Truthy");
+}
+else{
+console.log("Falsy");
+}
+VM6498:2 Truthy
+undefined
+ram;
+null
+var ram = {id:1001,name:'Ram',salary:9999};
+undefined
+console.log("Ram is "+ram);
+VM6721:1 Ram is [object Object]
+undefined
+console.log("Ram is ",ram);
+VM6739:1 Ram is  {id: 1001, name: "Ram", salary: 9999}
+undefined
+loop(cube);
+VM5456:4 1
+VM5456:4 8
+VM5456:4 27
+VM5456:4 64
+VM5456:4 125
+VM5456:4 216
+VM5456:4 343
+VM5456:4 512
+VM5456:4 729
+VM5456:4 1000
+undefined
+loop(cube());
+undefined
+cube();
+NaN
+cube(3);
+27
+var a = 100;
+undefined
+var b = "100";
+undefined
+a==b;
+true
+a===b;
+false
+a;
+100
+a+true;
+101
+function jQuery(){
+console.log("I am JQuery");
+}
+undefined
+var $ = jQuery;
+undefined
+$("#id");
+VM9698:2 I am JQuery
+undefined
+$(document);
+VM9698:2 I am JQuery
+undefined
+function add(){
+console.log("Add ");
+}
+undefined
+add(1);
+VM9984:2 Add 
+undefined
+add([10,20]);
+VM9984:2 Add 
+undefined
+console.dir(add);
+VM10021:1 ƒ add()arguments: nullcaller: nulllength: 0name: "add"prototype: {constructor: ƒ}__proto__: ƒ ()[[FunctionLocation]]: VM9984:1[[Scopes]]: Scopes[2]
+undefined
+function add(){
+//console.log("Add ");
+var sum = 0;
+for(let i = 0 ; i<arguments.length; i++){
+sum+=arguments[i];
+}
+return sum;
+}
+undefined
+add();
+0
+add(10,20);
+30
+add(10,20,30);
+60
+add(10,20,"30");
+"3030"
+function add(){
+//console.log("Add ");
+var sum = 0;
+for(let i = 0 ; i<arguments.length; i++){
+sum+=parseInt(arguments[i]);
+}
+return sum;
+}
+undefined
+add(10,20,"30");
+60
+add(10,20,"30","amit");
+NaN
+function add(){
+//console.log("Add ");
+var sum = 0;
+for(let i = 0 ; i<arguments.length; i++){
+sum+=isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);
+}
+return sum;
+}
+undefined
+add(10,20,"30","amit");
+60
+function firstNumber(){
+return 1000;
+}
+undefined
+add(10,20,"30","amit",firstNumber);
+60
+function add(){
+//console.log("Add ");
+var sum = 0;
+for(let i = 0 ; i<arguments.length; i++){
+if(typeof arguments[i]==="function"){
+arguments[i] = arguments[i]();
+}
+sum+=isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);
+}
+return sum;
+}
+undefined
+add(10,20,"30","amit",firstNumber);
+1060
+var f = function(){
+console.log("I am a Function Expression");
+}
+undefined
+typeof f;
+"function"
+f();
+VM10636:2 I am a Function Expression
+undefined
+f;
+ƒ (){
+console.log("I am a Function Expression");
+}
+function test1(){
+var d = function(){
+return 1000;
+}
+return d;
+}
+undefined
+var m = test1();
+undefined
+m;
+ƒ (){
+return 1000;
+}
+typeof m;
+"function"
+m();
+1000
+test1()();
+1000
+function test1(){
+var d = function A(){
+return 1000;
+}
+var e = function B(){
+return 2000;
+}
+return [d,e];
+}
+undefined
+var gg = test1();
+undefined
+gg;
+(2) [ƒ, ƒ]0: ƒ A()1: ƒ B()length: 2__proto__: Array(0)
+gg[0]();
+1000
+test1()[0]();
+1000
+function addition(x,y){
+return x + y;
+}
+undefined
+var d = (x,y)=>x+y;
+undefined
+d(100,200);
+300
+var d = (x,y)=>{
+console.log(`X is ${x} and Y is ${y}`);
+return x+y;
+}
+undefined
+d(100,2000);
+VM11479:2 X is 100 and Y is 2000
+2100
+var multi = `g,djkglkgjfl
+gdfgdfkjgdf
+gdf
+gfd
+gdf
+gf
+fgd
+gfd
+gg
+fdfg
+`;
+undefined
+multi;
+"g,djkglkgjfl
+gdfgdfkjgdf
+gdf
+gfd
+gdf
+gf
+fgd
+gfd
+gg
+fdfg
+"
