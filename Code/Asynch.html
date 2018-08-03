@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function printMe(t) {
+            document.querySelector("#msg").innerText = t;
+        }
+        //var result = "";
+        function giveMeResult(fn) {
+            setTimeout(() => {
+                for (let i = 1; i <= 100000; i++) {
+                    for (let j = 1; j <= 100000; j++) {
+
+                    }
+                }
+                console.log("I am DONE ... ");
+                //result = "Heavy Task Done...";
+                fn("Heavy Task Done...");
+                //return "Heavy Task Done...";
+                // document.querySelector("#msg").innerText = "Heavy Task Done...";
+            }, 7000);
+            // return // blank;
+        }
+
+        function heavy() {
+            giveMeResult(printMe);
+            // console.log("Heavy Task .....");
+            // var t = giveMeResult();
+            // console.log("Give Me result end ", t);
+            // document.querySelector("#msg").innerText = t;
+
+        }
+
+        var count = (function() {
+            var counter = 0;
+            return function() {
+                    counter++;
+                    return counter;
+                }
+                //return increment;
+                // var increment = function() {
+                //     counter++;
+                //     return counter;
+                // }
+                // return increment;
+        })();
+
+        function light() {
+            document.querySelector("#result").innerText = count();
+
+        }
+    </script>
+</head>
+
+<body>
+    <p id="msg"></p>
+    <button onclick="heavy()">Heavy Task</button>
+    <button onclick="light()">Light Task</button>
+    <p id="result"></p>
+</body>
+
+</html>
