@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+}
+.col-1 {
+    float: left;
+    background-color: lightblue;
+    width: 50%;
+}
+
+.col-2 {
+    background-color: lightcoral;
+    float: left;
+    width: 50%;
+}
+
+/* clearfix */
