@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div_1 {
+            border: 2px solid red;
+        }
+        img {
+            animation-name: anim_1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes anim_1 {
+            /* from {
+                transform: translate(0px,0px);
+            }
+            to {
+                transform: translate(1000px,0px);
+            } */
+            0% {
+                transform: translate(0px,0px) rotateY(0deg);
+            }
+            50% {
+                transform: translate(1000px,0px) rotateY(0deg);
+            }
+            55% {
+                transform: translate(1000px,0px) rotateY(180deg);
+            }
+            100% {
+                transform: translate(0px,0px) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Animations</h1>
+
+    <div class="div_1">
+        <img src="image_1.gif" alt="">
+    </div>
+
+</body>
+</html>

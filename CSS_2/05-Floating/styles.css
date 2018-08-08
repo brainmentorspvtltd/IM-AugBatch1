@@ -1,16 +1,33 @@
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 body {
     margin: 0px;
 }
+
+#parent {
+    background-color: lightblue;
+}
 .col-1 {
     float: left;
-    background-color: lightblue;
-    width: 50%;
+    /* background-color: lightblue; */
+    width: 30%;
 }
 
 .col-2 {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     float: left;
-    width: 50%;
+    width: 30%;
+}
+
+.clear {
+    clear: both;
 }
 
 /* clearfix */
+.div_1 {
+    /* clear: both; */
+    background-color: green;
+}
