@@ -1,3 +1,64 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    background-color: lightgray;
+    margin: 0px 10px;
+    width: 50%;
+    padding: 10px;
+}
+
+#header {
+    /* background-color: yellowgreen; */
+    background-color: #2874F0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 10px;
+}
+h1 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.btn {
+    border: none;
+    background-color: #2874F0;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+}
+
+#content {
+    margin-top: 100px;
+}
+
+input, textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+input {
+    height: 40px;
+}
+
+#section_2 table {
+    width: 100%;
+}
+
 .size {
     width: 72px;
     height: 72px;
